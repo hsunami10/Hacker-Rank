@@ -11,10 +11,10 @@ void update(int *a,int *b) {
 int main() {
   int a, b;
     
-  // Take memory values of a and b
+  // Take memory addresses of a and b
   // Assign them to pointer pa and pb
-  int *pa = &a, *pb = &b;
-    
+  int pa = &a, *pb = &b;
+  cout << pa << '\n';
   scanf("%d %d", &a, &b);
   update(pa, pb);
   printf("%d\n%d", a, b);
